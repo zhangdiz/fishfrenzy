@@ -199,7 +199,8 @@ async function main() {
         
         await new Promise(resolve => setTimeout(resolve, 5000));
     } catch (error) {
-      logger('Error during authentication or login:', 'error');
+        logger('Error during authentication or login:', 'error');
+        await new Promise(resolve => setTimeout(resolve, 3000));
     }
   }
 
