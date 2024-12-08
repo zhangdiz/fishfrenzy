@@ -102,7 +102,7 @@ export async function fishing(token, type = '1', proxy) {
                 if (parsedData.success) {
                     logger(`Game succeeded! Fish Catched: ${fish} Energy Left: ${energy}`, 'success');
                 } else {
-                    logger('Game failed:', 'error', parsedData);
+                    logger('Game failed:', 'error', JSON.stringify(parsedData));
                 }
             }
         } catch (error) {
