@@ -21,8 +21,8 @@ async function main() {
   logger(banner, 'debug')
   const tokens = loadTokensFromFile('tokens.txt');
   const proxies = loadProxiesFromFile('proxy.txt');
-  let type = await askQuestion('Choose Your fishing type\n1. short_range  \n2. mid_range \n3. long_range \nEnter your choice (1 2 3): ');
-
+  // let type = await askQuestion('Choose Your fishing type\n1. short_range  \n2. mid_range \n3. long_range \nEnter your choice (1 2 3): ');
+  const type = '2'
   if (proxies.length === 0) {
     logger('No proxies found. Exiting...', 'error');
     return;
